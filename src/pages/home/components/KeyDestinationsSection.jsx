@@ -28,7 +28,7 @@ const KeyDestinationsSection = () => {
   const destinations = [
     {
       name: 'Istanbul',
-      image: '/public/images/destinations/istanbul.png',
+      image: '/images/destinations/istanbul.png',
       description: 'Where East meets West — explore centuries of history in the Hagia Sophia, shop in the Grand Bazaar, cruise the Bosphorus, and savor world-class cuisine in this vibrant city that never sleeps.'
     },
     {
