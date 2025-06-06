@@ -63,7 +63,7 @@ const CoreServicesSection = () => {
             {/* SVG underline positioned under 'Services' only */}
             <span className="absolute left-0 -bottom-3 w-full flex justify-center">
               <img 
-                src="/public/images/shape under word.svg" 
+                src="/images/shape under word.svg" 
                 alt="Decorative underline" 
                 className="h-4 w-auto"
               />

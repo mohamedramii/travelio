@@ -33,19 +33,19 @@ const KeyDestinationsSection = () => {
     },
     {
       name: 'Antalya',
-      image: '/public/images/destinations/antalya.png'
+      image: '/images/destinations/antalya.png'
     },
     {
       name: 'Pamukkale',
-      image: '/public/images/destinations/pamukkale.png'
+      image: '/images/destinations/pamukkale.png'
     },
     {
       name: 'Bursa',
-      image: '/public/images/destinations/bursa.png'
+      image: '/images/destinations/bursa.png'
     },
     {
       name: 'Konya',
-      image: '/public/images/destinations/konya.png'
+      image: '/images/destinations/konya.png'
     }
   ];
 
@@ -57,7 +57,7 @@ const KeyDestinationsSection = () => {
           Key Destinations <span className="relative inline-block text-[#014E82]">We Serve
             {/* SVG shape under text */}
             <img 
-              src="/public/images/shape under word.svg" 
+              src="/images/shape under word.svg" 
               alt="Decorative shape" 
               className="absolute w-[255px] h-[18px] -bottom-2 left-0 -z-10" />
           </span>
@@ -69,7 +69,7 @@ const KeyDestinationsSection = () => {
         <div className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] relative">
           {/* Main hero image */}
           <img 
-            src="/public/images/destinations/istanbul.png"
+            src="/images/destinations/istanbul.png"
             alt="Istanbul"
             className="w-full h-full object-cover"
           />

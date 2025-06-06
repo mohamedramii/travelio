@@ -59,23 +59,23 @@ const WhyChooseTravelioSection = () => {
     },
     {
       title: "Global network: 500+ trusted travel agents",
-      iconSrc: "/public/images/icons/global-network-icon.png"
+      iconSrc: "/images/icons/global-network-icon.png"
     },
     {
       title: "Powerful B2B booking system",
-      iconSrc: "/public/images/icons/booking-system-icon.png"
+      iconSrc: "/images/icons/booking-system-icon.png"
     },
     {
       title: "24/7 multilingual customer support",
-      iconSrc: "/public/images/icons/customer-support-icon.png"
+      iconSrc: "/images/icons/customer-support-icon.png"
     },
     {
       title: "Competitive pricing via partnerships",
-      iconSrc: "/public/images/icons/pricing-icon.png"
+      iconSrc: "/images/icons/pricing-icon.png"
     },
     {
       title: "Tailored itineraries for your audience",
-      iconSrc: "/public/images/icons/tailored-icon.png"
+      iconSrc: "/images/icons/tailored-icon.png"
     }
   ];
 
@@ -87,7 +87,7 @@ const WhyChooseTravelioSection = () => {
           Why Choose <span className="relative inline-block text-[#014E82]">Travelio?
             {/* SVG shape under text */}
             <img 
-              src="/public/images/shape under word.svg" 
+              src="/images/shape under word.svg" 
               alt="Decorative shape" 
               className="absolute w-[233px] h-[18px] -bottom-2 left-0 -z-10" />
           </span>
@@ -103,7 +103,7 @@ const WhyChooseTravelioSection = () => {
             <div className="w-full h-full relative">
               <video 
                 ref={videoRef} 
-                src="/public/video/Generated File May 25, 2025 - 3_42PM.mp4"
+                src="/video/Generated File May 25, 2025 - 3_42PM.mp4"
                 className="w-full h-full object-cover"
                 playsInline
                 muted
