@@ -55,7 +55,7 @@ const WhyChooseTravelioSection = () => {
   const features = [
     {
       title: "Deep local knowledge & logistical expertise",
-      iconSrc: "/public/images/icons/local-knowledge-icon.png"
+      iconSrc: "/images/icons/local-knowledge-icon.png"
     },
     {
       title: "Global network: 500+ trusted travel agents",
