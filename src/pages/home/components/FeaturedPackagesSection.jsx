@@ -8,28 +8,28 @@ const FeaturedPackagesSection = () => {
       name: "Classic Istanbul Explorer",
       duration: "5 Days",
       description: "Historic sites • Bosphorus cruise • Turkish cuisine experience",
-      image: "../../../../public/images/custom/istanbul.png"
+      image: "/public/images/custom/istanbul.png"
     },
     {
       id: 2,
       name: "Antalya Luxury Escape",
       duration: "6 Days",
       description: "All-inclusive resort • Yacht day trip • Pampering spa treatments",
-      image: "../../../../public/images/custom/antalya.png"
+      image: "/public/images/custom/antalya.png"
     },
     {
       id: 3,
       name: "Cappadocia Adventure",
       duration: "4 Days",
       description: "Hot-air balloon ride • Fairy chimneys • Cave hotel stay",
-      image: "../../../../public/images/custom/cappadocia.png"
+      image: "/public/images/custom/cappadocia.png"
     },
     {
       id: 4,
       name: "Halal & Spiritual Tour",
       duration: "7 Days",
       description: "Mosque visits • Halal dining • Islamic heritage sites",
-      image: "../../../../public/images/custom/halal-tour.png"
+      image: "/public/images/custom/halal-tour.png"
     }
   ];
 
@@ -47,7 +47,7 @@ const FeaturedPackagesSection = () => {
               {/* SVG underline positioned under 'Custom Tours' only */}
               <span className="absolute left-0 -bottom-2 w-full">
                 <img 
-                  src="../../../../public/images/shape under word.svg" 
+                  src="/public/images/shape under word.svg" 
                   alt="Decorative underline" 
                   className="h-4 w-auto"
                 />

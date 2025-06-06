@@ -28,24 +28,24 @@ const KeyDestinationsSection = () => {
   const destinations = [
     {
       name: 'Istanbul',
-      image: '../../../../public/images/destinations/istanbul.png',
+      image: '/public/images/destinations/istanbul.png',
       description: 'Where East meets West — explore centuries of history in the Hagia Sophia, shop in the Grand Bazaar, cruise the Bosphorus, and savor world-class cuisine in this vibrant city that never sleeps.'
     },
     {
       name: 'Antalya',
-      image: '../../../../public/images/destinations/antalya.png'
+      image: '/public/images/destinations/antalya.png'
     },
     {
       name: 'Pamukkale',
-      image: '../../../../public/images/destinations/pamukkale.png'
+      image: '/public/images/destinations/pamukkale.png'
     },
     {
       name: 'Bursa',
-      image: '../../../../public/images/destinations/bursa.png'
+      image: '/public/images/destinations/bursa.png'
     },
     {
       name: 'Konya',
-      image: '../../../../public/images/destinations/konya.png'
+      image: '/public/images/destinations/konya.png'
     }
   ];
 
@@ -57,7 +57,7 @@ const KeyDestinationsSection = () => {
           Key Destinations <span className="relative inline-block text-[#014E82]">We Serve
             {/* SVG shape under text */}
             <img 
-              src="../../../../public/images/shape under word.svg" 
+              src="/public/images/shape under word.svg" 
               alt="Decorative shape" 
               className="absolute w-[255px] h-[18px] -bottom-2 left-0 -z-10" />
           </span>
@@ -69,7 +69,7 @@ const KeyDestinationsSection = () => {
         <div className="w-full h-[300px] sm:h-[350px] md:h-[400px] lg:h-[450px] xl:h-[500px] relative">
           {/* Main hero image */}
           <img 
-            src="../../../../public/images/destinations/istanbul.png"
+            src="/public/images/destinations/istanbul.png"
             alt="Istanbul"
             className="w-full h-full object-cover"
           />

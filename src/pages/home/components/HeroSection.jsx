@@ -8,9 +8,9 @@ const HeroSection = () => {
   
   // Background images array with useMemo to prevent recreating on each render
   const backgroundImages = useMemo(() => [
-    "../../../../public/images/Layer 1.png",
-    "../../../../public/images/layer 2.png",
-    "../../../../public/images/layer 3.png"
+    "/public/images/Layer 1.png",
+    "/public/images/layer 2.png",
+    "/public/images/layer 3.png"
   ], []);
   
   // References for airplane animations
@@ -102,7 +102,7 @@ const HeroSection = () => {
         {/* Cloud elements - Always positioned at bottom of section regardless of screen width */}
         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-auto z-[7]">
           <img 
-            src="../../../../public/images/Cloud 7 copy 3.png" 
+            src="/public/images/Cloud 7 copy 3.png" 
             alt="Cloud" 
             className="w-full h-auto transform -rotate-8 translate-y-[65%]"
           />
@@ -126,7 +126,7 @@ const HeroSection = () => {
             }}
           >
             <img 
-              src="../../../../public/images/AIR.png" 
+              src="/public/images/AIR.png" 
               alt="Airplane" 
               className="w-full h-auto"
             />
@@ -148,7 +148,7 @@ const HeroSection = () => {
             }}
           >
             <img 
-              src="../../../../public/images/AIR.png" 
+              src="/public/images/AIR.png" 
               alt="New Airplane" 
               className="w-full h-auto"
             />
