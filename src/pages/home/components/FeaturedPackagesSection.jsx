@@ -34,7 +34,7 @@ const FeaturedPackagesSection = () => {
   ];
 
   return (
-    <section className="flex flex-col md:flex-row items-center py-14 px-4 md:px-8 lg:px-12 w-full max-w-[1920px] mx-auto gap-8 md:gap-20">
+    <section className="flex flex-col justify-center md:flex-row items-center py-14 px-4 md:px-8 lg:px-12 w-full max-w-[1920px] mx-auto gap-8 md:gap-20">
       {/* Left side - Title and CTA */}
       <div className="flex flex-col gap-6 w-full md:w-1/3 lg:w-[343px]">
         {/* Title and subtitle container */}
@@ -71,7 +71,7 @@ const FeaturedPackagesSection = () => {
       </div>
       
       {/* Right side - Package cards */}
-      <div className="flex flex-nowrap overflow-x-auto gap-6 w-full md:w-2/3 pb-4 hide-scrollbar">
+      <div className="flex flex-nowrap justify-center overflow-x-auto gap-6 w-full md:w-2/3 pb-4 hide-scrollbar">
         {packages.map((pkg) => (
           <div 
             key={pkg.id} 
