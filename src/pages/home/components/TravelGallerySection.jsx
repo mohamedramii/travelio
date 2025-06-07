@@ -53,13 +53,13 @@ const TravelGallerySection = () => {
             <span className="relative inline-block">
               Next Adventure?
               {/* Vector underline - using a div with background instead of absolute positioning */}
-              <div 
-                className="h-[16px] w-[472px] absolute left-0 bottom-[-5px]" 
-                style={{ 
-                  background: '#F2994A',
-                  transform: 'matrix(1, 0, -0.4, 0.92, 0, 0)'
-                }}
+              <div className="relative h-0 w-[450px] ml-1">
+              <img 
+                src="/images/shape under word.svg" 
+                alt="Decorative underline" 
+                className="absolute top-[-10px] w-full"
               />
+            </div>
             </span>
           </h2>
           
@@ -69,7 +69,7 @@ const TravelGallerySection = () => {
         </div>
         
         {/* Button Container */}
-        <button className="flex items-center bg-[#014E82] text-white rounded-full px-4 py-0 h-[56px]">
+        <button className="flex items-center bg-[#014E82] text-white rounded-full px-4 pr-1 py-0 h-[56px]">
           <span className="font-['Work_Sans'] font-semibold text-base mr-3">Plan My Trip</span>
           <div className="flex justify-center items-center w-10 h-10 bg-white rounded-full border border-[#0099D2]">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -80,7 +80,7 @@ const WhyChooseTravelioSection = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="flex flex-col items-center pt-14 pb-20 px-4 md:px-8 lg:px-12 xl:px-24 w-full max-w-[1920px] mx-auto relative">
+    <section ref={sectionRef} className="flex flex-col items-center pt-14 pb-20 px-4 md:px-8 lg:px-12 xl:px-[200px] w-full max-w-[1920px] mx-auto relative">
       {/* Title section with SVG underline */}
       <div className="relative flex flex-col items-center w-full mb-12">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#222222]">

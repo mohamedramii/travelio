@@ -2,19 +2,27 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#014E82] text-white pt-14">
+    <footer className="w-full bg-[#014E82] text-white pt-14  overflow-hidden ">
       {/* Main footer container */}
       <div className="w-full max-w-[1920px] mx-auto flex flex-col relative">
         {/* Decorative elements - these will be positioned absolute */}
-        <div className="absolute opacity-20 right-0 top-0 -z-0 hidden md:block">
-          {/* Placeholder for decorative vector - you can add your SVG or image here */}
+        <div className="absolute opacity-20 right-0 -top-40 -z-0 hidden md:block rotate-180">
+          <img 
+            src="/images/illustrations/Background.svg" 
+            alt="Decorative background" 
+            className="h-[760px] object-contain"
+          />
         </div>
-        <div className="absolute opacity-20 left-0 top-0 -z-0 hidden md:block">
-          {/* Placeholder for decorative vector - you can add your SVG or image here */}
+        <div className="absolute opacity-20 -left-40 -top-20 -z-0 hidden md:block">
+          <img 
+            src="/images/illustrations/Background.svg" 
+            alt="Decorative background" 
+            className="h-[800px] object-contain"
+          />
         </div>
         
         {/* Newsletter section */}
-        <div className="px-4 md:px-40 relative z-10">
+        <div className="px-4 md:px-8 lg:px-12 xl:px-[200px] relative z-10">
           <div className="flex flex-col lg:flex-row border-b border-white pb-6 gap-8">
             <div className="flex flex-col gap-2 flex-grow">
               <h2 className="font-['Work_Sans'] font-bold text-2xl">Stay in the Loop with Travelio</h2>
@@ -45,13 +53,17 @@ const Footer = () => {
         </div>
         
         {/* Footer links section */}
-        <div className="px-4 md:px-40 py-6">
+        <div className="px-4 md:px-8 lg:px-12 xl:px-[200px] py-6">
           <div className="flex flex-col md:flex-row gap-6">
             {/* Company logo and description */}
             <div className="flex flex-col gap-6 md:w-1/4">
-              <div className="w-[238px] h-[40px] bg-white">
-                {/* Logo placeholder - replace with your actual logo */}
-                <h1 className="font-bold text-[#014E82] text-3xl pl-4">TRAVELIO</h1>
+              <div className="w-full flex items-center">
+                {/* Company logo */}
+                <img 
+                  src="/images/white-logo.png" 
+                  alt="Travelio Logo" 
+                  className="h-12 object-contain"
+                />
               </div>
               <p className="font-['Work_Sans'] font-medium text-base">
                 Travelio is a Turkey-Based Destination Management Company Offering Personalized Travel Experiences, Expert Logistics, And Cultural Depth Across The Country's Top Destinations.
@@ -165,7 +177,7 @@ const Footer = () => {
         </div>
         
         {/* Copyright section */}
-        <div className="px-4 md:px-40 py-6">
+        <div className="px-4 md:px-8 lg:px-12 xl:px-[200px] py-6">
           <div className="border-t border-white pt-6 flex justify-center items-center">
             <div className="flex items-center gap-2">
               <span className="text-white w-4 h-4 flex items-center justify-center">©</span>

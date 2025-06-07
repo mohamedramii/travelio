@@ -48,16 +48,38 @@ const TestimonialsSection = () => {
   const visibleTestimonials = testimonials.slice(currentIndex, currentIndex + 3);
 
   return (
-    <section className="flex flex-col items-center py-14 px-4 md:px-8 lg:px-12 w-full max-w-[1920px] mx-auto relative">
+    <section className="flex flex-col items-center py-14 px-4 md:px-8 lg:px-12 xl:px-[200px] w-full max-w-[1920px] mx-auto">
       {/* Section Title */}
       <h2 className="text-3xl md:text-4xl font-bold font-['Work_Sans'] text-[#222222] mb-8 text-center">
         What Travelers <span className="text-[#014e82]">Are Saying</span>
       </h2>
       
-      {/* Testimonials Container */}
-      <div className="flex flex-col lg:flex-row w-full gap-6 relative">
+      {/* Testimonials Container with navigation */}
+      <div className="w-full relative max-w-[1520px] mx-auto">
+        {/* Previous Button - Half inside/half outside the left edge */}
+        <button 
+          className="h-12 w-12 rounded-full bg-white shadow-md flex items-center justify-center absolute left-0 top-1/2 transform -translate-y-1/2 -translate-x-1/2 z-10"
+          onClick={handlePrevClick}
+          disabled={currentIndex === 0}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 19L8 12L15 5" stroke="#014E82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+        
+        {/* Next Button - Half inside/half outside the right edge */}
+        <button 
+          className="h-12 w-12 rounded-full bg-white shadow-md flex items-center justify-center absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 z-10"
+          onClick={handleNextClick}
+          disabled={currentIndex >= testimonials.length - 3}
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 5L16 12L9 19" stroke="#014E82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+          </svg>
+        </button>
+        
         {/* Testimonial Cards */}
-        <div className="flex flex-col lg:flex-row gap-6 w-full max-w-[1520px] mx-auto overflow-x-auto pb-4">
+        <div className="flex flex-col lg:flex-row gap-6 w-full overflow-x-auto pb-4">
           {visibleTestimonials.map(testimonial => (
             <div 
               key={testimonial.id}
@@ -112,39 +134,13 @@ const TestimonialsSection = () => {
                   <img 
                     src="/images/icons/airplan-illus.png" 
                     alt="Airplane illustration" 
-                    className="w-[214px] "
+                    className="w-[214px]"
                   />
                 </div>
               </div>
             </div>
           ))}
         </div>
-        
-      </div>
-      
-      {/* Navigation Controls - Positioned half inside/half outside */}
-      <div className="absolute left-0 right-0 top-1/2 transform -translate-y-1/2 flex justify-between px-50 z-10 pointer-events-none">
-        {/* Previous Button */}
-        <button 
-          className={`w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform -translate-x-1/2 pointer-events-auto `}
-          onClick={handlePrevClick}
-          disabled={currentIndex === 0}
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M15 19L8 12L15 5" stroke="#014E82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
-        
-        {/* Next Button */}
-        <button 
-          className={`w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center transform translate-x-1/2 pointer-events-auto `}
-          onClick={handleNextClick}
-          disabled={currentIndex >= testimonials.length - 3}
-        >
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M9 5L16 12L9 19" stroke="#014E82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-          </svg>
-        </button>
       </div>
     </section>
   );

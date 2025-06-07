@@ -24,7 +24,7 @@ const TravelBlogSection = () => {
   ];
 
   return (
-    <section className="w-full max-w-[1920px] mx-auto">
+    <section className="w-full max-w-[1920px] mx-auto relative">
       {/* Main blue background container */}
       <div className="flex flex-col lg:flex-row gap-8 lg:gap-20 bg-[#014E82] px-4 md:px-8 lg:px-12 xl:px-[200px] py-20 2xl:h-[660px]">
         {/* Left side - Text and CTA button */}
@@ -51,7 +51,7 @@ const TravelBlogSection = () => {
           </div>
           
           {/* Discover All Blogs button */}
-          <button className="flex items-center justify-between bg-white text-[#014E82] rounded-full w-fit py-2 px-4">
+          <button className="flex items-center justify-between bg-white text-[#014E82] rounded-full w-fit py-2 px-4 pr-1">
             <span className="font-semibold text-base px-3 font-['Work_Sans']">Discover All Blogs</span>
             <div className="w-10 h-10 rounded-full bg-[#014E82] border border-[#0099D2] flex items-center justify-center">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,8 +69,8 @@ const TravelBlogSection = () => {
       </div>
         </div>
         
-        {/* Right side - Blog post cards */}
-        <div className="flex flex-col md:flex-row gap-6 overflow-x-auto hide-scrollbar w-full lg:w-auto lg:flex-1">
+        {/* Right side - Blog post cards - container with relative position for arrow */}
+        <div className="flex flex-col md:flex-row gap-6 overflow-x-auto hide-scrollbar w-full lg:w-auto lg:flex-1 relative">
           {blogPosts.map((post) => (
             <div 
               key={post.id} 
@@ -101,18 +101,16 @@ const TravelBlogSection = () => {
             </div>
           ))}
           
-          {/* Navigation arrow */}
-          <div className="absolute right-4 xl:right-[176px] top-1/2 transform -translate-y-1/2 hidden lg:block">
-            <button className="w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9 5L16 12L9 19" stroke="#014E82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-              </svg>
-            </button>
-          </div>
+          {/* Navigation arrow - positioned half in/half out at the right edge of blog cards container */}
+          <button className="w-12 h-12 rounded-full bg-white shadow-md items-center justify-center absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-1/2 z-10 hidden lg:flex">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 5L16 12L9 19" stroke="#014E82" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            </svg>
+          </button>
         </div>
       </div>
       
-     
+      {/* Navigation arrow removed from here and moved into the blog post cards container */}
     </section>
   );
 };

@@ -50,7 +50,7 @@ const KeyDestinationsSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center pt-14 pb-0 md:px-8 lg:px-12 xl:px-24 gap-8 w-full max-w-[1920px] mx-auto relative">
+    <section className="flex flex-col items-center pt-14 pb-0 md:px-8 lg:px-12 xl:px-[150px] 2xl:px-[200px] gap-8 w-full max-w-[1920px] mx-auto relative">
       {/* Title section with underline decoration */}
       <div className="relative flex flex-col items-center w-full">
         <h2 className="text-3xl md:text-4xl font-bold text-center text-[#222222]">

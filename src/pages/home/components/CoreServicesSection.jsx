@@ -54,7 +54,7 @@ const CoreServicesSection = () => {
   ];
 
   return (
-    <section className="flex flex-col items-center py-14 px-4 md:px-8 lg:px-12   w-full max-w-[1920px] mx-auto">
+    <section className="flex flex-col items-center py-14 px-4 md:px-8 lg:px-12 xl:px-[200px] w-full max-w-[1920px] mx-auto">
       {/* Title with SVG underline */}
       <div className="flex flex-col items-center mb-8">
         <h2 className="text-3xl md:text-4xl font-bold font-['Work_Sans'] text-[#222222] mb-2 relative">
@@ -75,12 +75,11 @@ const CoreServicesSection = () => {
       {/* Services container */}
       <div className="flex flex-col w-full gap-6">
         {/* First row of services */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
           {services.slice(0, 4).map((service) => (
             <div 
               key={service.id}
-              className="flex-1 min-w-[280px] flex flex-col bg-white rounded-[24px] p-6 "
-              style={{ minHeight: '213px' }}
+              className="flex flex-col bg-white rounded-[24px] p-6 min-h-[213px]"
             >
               {/* Badge with number */}
               <div className="flex mb-6">
@@ -102,12 +101,11 @@ const CoreServicesSection = () => {
         </div>
         
         {/* Second row of services */}
-        <div className="flex flex-col sm:flex-row flex-wrap gap-6 w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
           {services.slice(4).map((service) => (
             <div 
               key={service.id}
-              className="flex-1 min-w-[280px] flex flex-col bg-white rounded-[24px] p-6 "
-              style={{ minHeight: '213px' }}
+              className="flex flex-col bg-white rounded-[24px] p-6 min-h-[213px]"
             >
               {/* Badge with number */}
               <div className="flex mb-6">
@@ -128,6 +126,7 @@ const CoreServicesSection = () => {
           ))}
         </div>
       </div>
+
     </section>
   );
 };
